@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Calculadora_Botones</string>
+    <string name="txtInicial">0</string>
+    <string name="txt8">8</string>
+    <string name="txt7">7</string>
+    <string name="txt9">9</string>
+    <string name="txtMas">+</string>
+    <string name="txt6">6</string>
+    <string name="txt5">5</string>
+    <string name="txt4">4</string>
+    <string name="txtMenos">-</string>
+    <string name="txt3">3</string>
+    <string name="txt2">2</string>
+    <string name="txt1">1</string>
+    <string name="txt0">0</string>
+    <string name="txtPor">*</string>
+    <string name="txtDividido">/</string>
+    <string name="txtPorcent">%</string>
+    <string name="txtPunto">.</string>
+    <string name="txtIgual">=</string>
+    <string name="txtC">C</string>
+    <string name="txtAC">AC</string>
+</resources>
+
+

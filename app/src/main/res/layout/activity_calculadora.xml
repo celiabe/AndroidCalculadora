@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.celia.calculadora_botones.CalculadoraActivity">
+
+    <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="@string/txtInicial"
+    android:id="@+id/textView"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="34dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:textAlignment="textEnd"
+    android:textSize="50sp"
+    android:background="#bbbbbb"
+    android:onClick="teclaOperador" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="@string/txt7"
+                android:id="@+id/bt7"
+                style="@style/tecla"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:onClick="teclanumerica" />
+
+            <Button
+                style="@style/tecla"
+                android:text="@string/txt8"
+                android:id="@+id/bt8"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:onClick="teclanumerica" />
+
+            <Button
+                style="@style/tecla"
+                android:text="@string/txt9"
+                android:id="@+id/bt9"
+                android:onClick="teclanumerica" />
+
+            <Button
+                style="@style/tecla"
+                android:text="@string/txtMas"
+                android:id="@+id/btMas"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:onClick="teclaOperador" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="@style/tecla"
+                android:text="@string/txt4"
+                android:id="@+id/bt4"
+                android:onClick="teclanumerica" />
+
+            <Button
+                style="@style/tecla"
+                android:text="@string/txt5"
+                android:id="@+id/bt5"
+                android:onClick="teclanumerica" />
+
+            <Button
+                style="@style/tecla"
+                android:text="@string/txt6"
+                android:id="@+id/bt6"
+                android:onClick="teclanumerica" />
+
+            <Button
+                style="@style/tecla"
+                android:text="@string/txtMenos"
+                android:id="@+id/btMenos"
+                android:onClick="teclaOperador" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="@style/tecla"
+                android:text="@string/txt1"
+                android:id="@+id/button"
+                android:onClick="teclanumerica" />
+
+            <Button
+                style="@style/tecla"
+                android:text="@string/txt2"
+                android:id="@+id/bt2"
+                android:onClick="teclanumerica" />
+
+            <Button
+                style="@style/tecla"
+                android:text="@string/txt3"
+                android:id="@+id/bt3"
+                android:onClick="teclanumerica" />
+
+            <Button
+                style="@style/tecla"
+                android:text="@string/txtPor"
+                android:id="@+id/btPor"
+                android:onClick="teclaOperador" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="@style/tecla"
+                android:text="@string/txt0"
+                android:id="@+id/bt0"
+                android:onClick="teclanumerica" />
+
+            <Button
+                style="@style/tecla"
+                android:text="@string/txtPunto"
+                android:id="@+id/btPunto"
+                android:onClick="teclanumerica" />
+
+            <Button
+                style="@style/tecla"
+                android:text="@string/txtPorcent"
+                android:id="@+id/btPercent"
+                android:onClick="teclaOperador" />
+
+            <Button
+                style=  "@style/tecla"
+                android:text="@string/txtDividido"
+                android:id="@+id/btDividido"
+                android:onClick="teclaOperador" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style=  "@style/tecla"
+                android:text="@string/txtIgual"
+                android:id="@+id/btIgual"
+                android:layout_weight="10"
+                android:onClick="teclaIgual" />
+
+            <Button
+                style=  "@style/tecla"
+                android:text="@string/txtAC"
+                android:id="@+id/btAC"
+                android:background="#d93030"
+                android:onClick="teclaAC" />
+
+            <Button
+                style= "@style/tecla"
+                android:text="@string/txtC"
+                android:id="@+id/btC"
+                android:background="#d93030"
+                android:onClick="teclaC" />
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
